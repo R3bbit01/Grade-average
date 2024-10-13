@@ -1,0 +1,63 @@
+// Gets basic grade average. Nothing special
+//
+
+#include <iostream>
+
+using namespace std;
+
+float first_number, second_number, third_number; 
+float average;
+float average_grade;
+
+int main()
+{
+	cout << "---Welcome to the overall grade calculator-----\n\n";
+
+
+	cout << "Enter your first grade: ";
+	cin >> first_number;
+
+	cout << "Enter your second grade: ";
+	cin >> second_number;
+
+	cout << "Enter your third grade: ";
+	cin >> third_number;
+
+	cout << "Enter the total number of grades to get the average: ";
+	cin >> average_grade;
+
+	average = (first_number + second_number + third_number) / average_grade;
+	
+	if (average >= 90)
+	{
+		cout << " Youre average is " << average << " in which means A+";
+	}
+
+	else if (average >= 80 && average <= 89)
+	{ 
+		cout << "Your average is " << average << " in which means a A";
+
+	}
+	else if (average >= 70 && average <= 79)
+	{
+		cout << "Your average is " << average << " In which means a B+";
+	}
+	else if (average >= 60 && average <= 69)
+	{
+		cout << "Your average is " << average << " In which means a B";
+	}
+	else if (average >= 50 && average <= 59)
+	{
+		cout << "Your average is " << average << " in which means a C+";
+	}
+	else if (average >= 40 && average <= 49)
+		cout << "Your average is " << average << " in which means a C";
+
+	else if (average >= 35 && average <= 40)
+	{
+		cout << "Your average is " << average << " in which means a D";
+	}
+
+		return 0;
+
+	}
